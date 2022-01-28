@@ -1,0 +1,16 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    text-align: center; 
+    width: 30%;
+    margin: 15vh auto 0 auto;
+    padding: 5em;
+    border: 5px solid #FF8F7E;
+    border-radius: 25px;
+}
+
+#score {
+    padding: 2em;
+}

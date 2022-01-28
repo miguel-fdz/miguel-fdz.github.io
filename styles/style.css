@@ -31,7 +31,6 @@ nav a {
 }
 
 #intro {
-    /* position: absolute; */
     padding: 2.5em;
     box-sizing: border-box;
     background-image: url(../images/circles.png);
@@ -39,8 +38,13 @@ nav a {
     background-repeat: no-repeat;
 }
 
+/* #intro > * {
+    overflow: hidden;
+
+} */
+
 #name {
-    font-size: 200%;
+    font-size: 10vw;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -51,8 +55,7 @@ nav a {
 }
 
 #profile-picture {
-    /* width: 100%; */
-    /* min-height: 100%; */
+
 }
 
 #portfolio
@@ -67,21 +70,22 @@ nav a {
     width: 50%;
     background-color: #FFF;
     border-radius: 5px;
-    /* background-image: url(../images/expand.png);
+    background-image: url(../images/expand.svg);
     background-repeat: no-repeat;
-    background-position: right; */
+    background-position: 90% 50%;
 }
 
 .portfolioProjects img {
-    /* text-align: right; */
-    color: red;
+    position: relative;
+    left: 1em;
+    top: .25em;
 }
 
-#who {
+#personalProjects {
     background-color: #FFF;
 }
 
-#who h1 {
+#personalProjects h1 {
     text-align: center;
 }
 
@@ -123,6 +127,11 @@ nav a {
         background-repeat: no-repeat;
         background-size: contain;
         min-width: 100%;
+    }
+
+    
+    .portfolioProjects img {
+        left: 4em;
     }
 }
 
