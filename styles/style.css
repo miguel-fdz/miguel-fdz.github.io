@@ -1,0 +1,142 @@
+:root {
+    --primary: #FF8F7E;
+    --secondary: #C2F1FF;
+    --beige: #f8f7f1;
+    --light-blue: #E5FAF9;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-blue);
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+#logo {
+    font-size: 150%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+#navOptions a{
+    padding: 0 1em;
+}
+
+#intro {
+    /* position: absolute; */
+    padding: 2.5em;
+    box-sizing: border-box;
+    background-image: url(../images/circles.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#name {
+    font-size: 200%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#intro h2 {
+    font-weight: 300;
+    margin: .5em 0;
+}
+
+#profile-picture {
+    /* width: 100%; */
+    /* min-height: 100%; */
+}
+
+#portfolio
+{
+    background-color: #FFF;
+}
+
+.portfolioProjects {
+    display: block;
+    margin: 2em auto;
+    padding: 1em;
+    width: 50%;
+    background-color: #FFF;
+    border-radius: 5px;
+    /* background-image: url(../images/expand.png);
+    background-repeat: no-repeat;
+    background-position: right; */
+}
+
+.portfolioProjects img {
+    /* text-align: right; */
+    color: red;
+}
+
+#who {
+    background-color: #FFF;
+}
+
+#who h1 {
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 60em) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40em;
+    }
+    
+    #intro {
+        position: relative;
+        width: 70%;
+        /* padding: 10em 0em; */
+        margin: auto auto;
+        background-image: none;
+    }
+    
+    #name {
+        font-size: 225%;
+    }
+    
+    #intro h1 {
+        font-size: 200%;
+    }
+    
+    #intro h2 {
+        font-size: 200%;
+    }
+    
+    #intro p {
+        margin: 0
+    }
+    
+    #profile-picture {
+        background-image: url(../images/miguel-medium.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 90em) {
+    main {
+        grid-template-rows: 50em;
+    }
+    
+    #intro {
+        padding: 10em 5em;
+    }
+
+    #profile-picture {
+        background-image: url(../images/miguel-large.png);
+    }
+}
