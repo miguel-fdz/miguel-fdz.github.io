@@ -1,0 +1,35 @@
+html {
+  text-align: center;
+  background-color: #C2F1FF;
+}
+
+#container {
+  display: grid;
+  width: 850px;
+  height: 600px;
+  grid-template-columns: repeat(16, 1fr);
+  background-color: white;
+  border: 2px solid;
+  margin: 0 auto;
+}
+
+input {
+  margin: 2em .5em;
+  width: 10em;
+  height: 2em;
+  background-color: #fff;
+}
+
+input:hover {
+  background-color: #286f6c;
+  color: #FFF;
+}
+
+h1 {
+  font-size: 30pt;
+  margin: 1em 0 1em 0;
+}
+
+.pixel {
+  border: 1px black dotted;
+}

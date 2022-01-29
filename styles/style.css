@@ -3,6 +3,10 @@
     --secondary: #C2F1FF;
     --beige: #f8f7f1;
     --light-blue: #E5FAF9;
+    --light-purple: #f8f1f8;
+    --dark-green: #286f6c;
+    --sandy: #fcc95d;
+    --aqua: #5BFCF4;
 }
 
 body {
@@ -33,15 +37,7 @@ nav a {
 #intro {
     padding: 2.5em;
     box-sizing: border-box;
-    background-image: url(../images/circles.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
-
-/* #intro > * {
-    overflow: hidden;
-
-} */
 
 #name {
     font-size: 10vw;
@@ -54,8 +50,10 @@ nav a {
     margin: .5em 0;
 }
 
-#profile-picture {
-
+picture {
+    display: block;
+    text-align: center;
+    object-fit: contain;
 }
 
 #portfolio
@@ -65,7 +63,7 @@ nav a {
 
 .portfolioProjects {
     display: block;
-    margin: 2em auto;
+    margin: 0 auto;
     padding: 1em;
     width: 50%;
     background-color: #FFF;
@@ -75,20 +73,69 @@ nav a {
     background-position: 90% 50%;
 }
 
-.portfolioProjects img {
-    position: relative;
-    left: 1em;
-    top: .25em;
-}
-
-#personalProjects {
+#myProjects {
     background-color: #FFF;
 }
 
-#personalProjects h1 {
+#myProjects h1 {
+    padding: 2% 0;
     text-align: center;
 }
 
+#projectScroll {
+    display: flex;
+    flex-direction: column ;
+}
+
+.project {
+    position: relative;
+    width: 20em;
+    border-radius: 25px;
+    margin: 0 1.5em 3em 1.5em;
+}
+
+.project img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-green);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 25px;
+}
+.project:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+  color: var(--light-blue);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text span{
+    font-size: 30px;
+    display: block;
+    /* transform: translate(-10%, -50%); */
+}
+
+#contact {
+    background-color: var(--light-purple);
+}
 
 
 @media only screen and (min-width: 60em) {
@@ -101,7 +148,6 @@ nav a {
     #intro {
         position: relative;
         width: 70%;
-        /* padding: 10em 0em; */
         margin: auto auto;
         background-image: none;
     }
@@ -122,16 +168,27 @@ nav a {
         margin: 0
     }
     
-    #profile-picture {
-        background-image: url(../images/miguel-medium.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        min-width: 100%;
+    #profile-picture img {
+        height: 100%;
     }
 
     
-    .portfolioProjects img {
-        left: 4em;
+    #projectScroll {
+        flex-direction: row;
+    }
+
+    #myProjects {
+        /* background-color: #FFF; */
+        grid-column: 1 / span 2;
+    }
+
+    #contact {
+        grid-column: 1 / span 2;
+    }
+
+    #contact h1 {
+        text-align: center;
+        padding: 2em 0;
     }
 }
 
@@ -143,9 +200,5 @@ nav a {
     
     #intro {
         padding: 10em 5em;
-    }
-
-    #profile-picture {
-        background-image: url(../images/miguel-large.png);
     }
 }

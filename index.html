@@ -25,26 +25,71 @@
         <div id="intro">
             <h1>Hi, I'm<br><span id="name">Miguel Fernández</span></h1>
             <h2>Web & Mobile Application Development Student at NBCC</h2>
-            <p>This is my Portfolio Website built with a responsive layout.</p>
+            <p>It's a pleasure to meet you!</p>
         </div>
-        <div id="profile-picture"></div>
-
-        <div id="portfolio">
-            <button class="portfolioProjects">How can I help?</button>
-            <button class="portfolioProjects">Personal Projects</button>
-            <button class="portfolioProjects">Academic Projects</button>
+        <picture id="profile-picture">
+            <source media="(min-width: 90em)" srcset="images/miguel-large.png">
+            <source media="(min-width: 60em)" srcset="images/miguel-medium.png">
+            <img src="images/miguelSm.png" alt="Miguel">
+        </picture>
+        
+        <div id="myProjects">
+            <h1>My Projects</h1>
+            <div id="projectScroll">
+                <a class="project" href="#myProjects">
+                    <img src="images/placeholder.png" alt="Tic-Tac-Toe">
+                    <div class="overlay">
+                        <div class="text">
+                            <span>Tic-Tac-Toe</span>
+                            <br> A Tic Tac Toe game you can play in your browser! 
+                            Built with vanilla HTML, CSS, & JS
+                        </div>
+                    </div>
+                </a>
+                <a class="project" href="#myProjects">
+                    <img src="images/placeholder.png" alt="Library">
+                    <div class="overlay">
+                        <div class="text">
+                            <span>Library</span>
+                            <br>This is a single-page library app, implemented with Google Books API.
+                        </div>
+                    </div>
+                </a>
+                <a class="project" href="#myProjects">
+                    <img src="images/placeholder.png" alt="Calculator">
+                    <div class="overlay">
+                        <div class="text">
+                            <span>Calculator</span>
+                            <br>This is a web-based calculator with a UI created using JS, HTML, and CSS.
+                        </div>
+                    </div>
+                </a>
+                <a class="project" href="etch-a-sketch.html">
+                    <img src="images/etchaSketch.png" alt="Etch-a-Sketch game">
+                    <div class="overlay">
+                        <div class="text">
+                            <span>Etch-a-Sketch</span>
+                            <br>This is a simple implementation of the grade-school classic 
+                            “rock, paper, scissors”. Built with vanilla HTML, CSS, & JS
+                        </div>
+                    </div>
+                </a>
+                <a class="project" href="rock-paper-scissors.html">
+                    <img src="images/rckPapSci.png" alt="Rock, paper, scissors game">
+                    <div class="overlay">
+                        <div class="text">
+                            <span>Rock, Paper, Scissors</span>
+                            <br>This is a browser version of something between a sketchpad 
+                            and an Etch-A-Sketch. Built with vanilla HTML, CSS, & JS
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-
-        <div id="personalProjects">
-            <h1>Personal Projects</h1>
-            <ul>
-                <li><a href="rock-paper-scissors.html">Rock, paper, scissors game</a></li>
-            </ul>
+        
+        <div id="contact">
+            <h1>Let's Collaborate!</h1>
         </div>
-        <!-- <div id="who">
-            <h1>How can I help?</h1>
-            <p>(Brief message about what I can do and who I am)</p>
-        </div> -->
     </main>
 </body>
 
