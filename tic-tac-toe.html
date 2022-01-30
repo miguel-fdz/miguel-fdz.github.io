@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles/tic-tac-toe.css">
+</head>
+
+<body>
+  <header>
+    <h1>tic-tac-toe!</h1>
+  </header>
+  
+  <div id="modalOverlay" class="closed">
+    <div class="modal" id="settingsModal">
+      <div class="player__name">
+        <h2>Players</h2>
+        <p>(Player One starts the first round!)</p>
+        <input class="player__name-input" id="playerOneName" placeholder='"Player One"'>
+        <input class="player__name-input" id="playerTwoName" placeholder='"Player Two"'>
+        <button class="player__name-button settings__button" id="submitPlayers">Submit</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="gameboard closed" id="gameboard">
+  </div>
+  <button class="settings__button" id="newGame">New game</button>
+</body>
+
+<script src="scripts/tic-tac-toe.js"></script>
+</html>
