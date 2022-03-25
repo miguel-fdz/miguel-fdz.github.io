@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <script src="scripts/app.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Miguel Fernandez</title>
 </head>
 
@@ -25,7 +26,7 @@
         <div id="intro">
             <h1>Hi, I'm<br><span id="name">Miguel Fernández</span></h1>
             <h2>Web & Mobile Application Development Student at NBCC</h2>
-            <p>It's a pleasure to meet you!</p>
+            <p>Welcome to my website!</p>
         </div>
         <picture id="profile-picture">
             <source media="(min-width: 90em)" srcset="images/miguel-large.png">
@@ -36,13 +37,24 @@
         <div id="myProjects">
             <h1>My Projects</h1>
             <div id="projectScroll">
+                <a class="project" href="pomodoro.html">
+                    <img src="images/pomodoro.png" alt="Pomodoro Timer">
+                    <div class="overlay">
+                        <div class="text">
+                            <span>Pomodoro Timer</span>
+                            <br> This is an adaptation of the Pomodoro Timer
+                            <!-- <a href="https://github.com/miguel-fdz/Pomodoro-Timer">code</a> -->
+                        </div>
+                    </div>
+                </a>
                 <a class="project" href="tic-tac-toe.html">
                     <img src="images/tic-tac-toe.png" alt="Tic-Tac-Toe">
                     <div class="overlay">
                         <div class="text">
                             <span>Tic-Tac-Toe</span>
-                            <br> A Tic Tac Toe game you can play in your browser! 
+                            <br> A Tic Tac Toe game built with OOP concepts! 
                             Built with vanilla HTML, CSS, & JS
+                            <!-- <a href="https://github.com/miguel-fdz/Tic_Tac_Toe">code</a> -->
                         </div>
                     </div>
                 </a>
@@ -51,7 +63,8 @@
                     <div class="overlay">
                         <div class="text">
                             <span>Calculator</span>
-                            <br>This is a web-based calculator with a UI created using JS, HTML, and CSS.
+                            <br>This is a web-based calculator with a UI created using JS, HTML, and CSS
+                            <!-- <a href="https://github.com/miguel-fdz/Calculator">code</a> -->
                         </div>
                     </div>
                 </a>
@@ -60,8 +73,9 @@
                     <div class="overlay">
                         <div class="text">
                             <span>Etch-a-Sketch</span>
-                            <br>This is a simple implementation of the grade-school classic 
-                            “rock, paper, scissors”. Built with vanilla HTML, CSS, & JS
+                            <br>This is a browser version of an Etch-A-Sketch. 
+                            Built with vanilla HTML, CSS, & JS
+                            <!-- <a href="https://github.com/MrLupine/etch-a-sketch">code</a> -->
                         </div>
                     </div>
                 </a>
@@ -70,8 +84,8 @@
                     <div class="overlay">
                         <div class="text">
                             <span>Rock, Paper, Scissors</span>
-                            <br>This is a browser version of something between a sketchpad 
-                            and an Etch-A-Sketch. Built with vanilla HTML, CSS, & JS
+                            <br>This is a simple implementation of the grade-school classic “rock, paper, scissors”
+                            <!-- <a href="https://github.com/miguel-fdz/rock-paper-scissors">code</a> -->
                         </div>
                     </div>
                 </a>
@@ -80,6 +94,24 @@
         
         <div id="contact">
             <h1>Let's Collaborate!</h1>
+            <div id="aboutMe">
+                <h2>
+                    I'm an aspiring web developer currently based in Moncton. 
+                    I used to work in Food & Beverage and the Hospitality Industry, 
+                    but now my life revolves around code.
+                </h2>
+                <h2>
+                    Are you looking for a developer that is passionate in what he does? 
+                    Reach out to me, you won't regret it! 
+                </h2>
+                <div id="contactLinks">
+                    <a href="mailto:miguelf.olalla@gmail.com" target="_blank" id="contactMe">Contact Me</a>
+                    <div id="social">
+                        <a href="https://www.linkedin.com/in/fernandez-miguel/"><img src="images/linkedIn.png" alt="linkedIn logo"></i></a>
+                        <a href="https://github.com/miguel-fdz"><img src="images/gitHub.png" alt="GitHub logo"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
